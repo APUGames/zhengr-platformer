@@ -64,16 +64,14 @@ public class Player : MonoBehaviour
         
         if(Input.GetButtonDown("Jump")){
             //get new y velocity bsed on controllable variable
+            if(!playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))){
+            return;
+        }
             Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
             playerCharacter.velocity += jumpVelocity;
             //here
             bool vSpeed = Mathf.Abs(playerCharacter.velocity.y) > Mathf.Epsilon;
             playerAnimator.SetBool("Jump", vSpeed);
-
-            if(!playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))){
-
-            return;
-        }
         }
 
         //yep
