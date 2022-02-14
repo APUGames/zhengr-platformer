@@ -58,10 +58,22 @@ MonoBehaviour:
   m_LayerIndex: 0
   m_ShowDebugText: 0
   m_ChildCameras:
-  - {fileID: 8024099369520132846}
-  - {fileID: 3234033131507995983}
-  - {fileID: 8218820162404353184}
-  m_Instructions: []
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_Instructions:
+  - m_FullHash: 2071589313
+    m_VirtualCamera: {fileID: 8218820162404353184}
+    m_ActivateAfter: 0
+    m_MinDuration: 0
+  - m_FullHash: 1779700004
+    m_VirtualCamera: {fileID: 8024099369520132846}
+    m_ActivateAfter: 0
+    m_MinDuration: 0
+  - m_FullHash: 1559260615
+    m_VirtualCamera: {fileID: 3234033131507995983}
+    m_ActivateAfter: 0
+    m_MinDuration: 0
   m_DefaultBlend:
     m_Style: 1
     m_Time: 0.5
@@ -71,7 +83,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: f0562e83c151a57449141930ac74273a, type: 2}
   m_ParentHash: []
 --- !u!1 &1857907662687603149
 GameObject:
@@ -128,7 +140,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 5
+    OrthographicSize: 6
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -537,7 +549,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 5
+    OrthographicSize: 5.5
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -629,7 +641,7 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_XDamping: 1
-  m_YDamping: 5
+  m_YDamping: 0.8
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
@@ -716,7 +728,7 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_XDamping: 1
-  m_YDamping: 5
+  m_YDamping: 3
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
