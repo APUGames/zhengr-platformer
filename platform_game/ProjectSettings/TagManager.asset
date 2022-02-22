@@ -16,9 +16,9 @@ TagManager:
   - Background
   - Player
   - Enemy
-  - 
-  - 
-  - 
+  - Hazards
+  - GoodPickup
+  - BadPickup
   - 
   - 
   - 
@@ -61,4 +61,7 @@ TagManager:
     locked: 0
   - name: frontground
     uniqueID: 4062268167
+    locked: 0
+  - name: interactables
+    uniqueID: 2936631317
     locked: 0

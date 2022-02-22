@@ -7,12 +7,17 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 5.0f;
     [SerializeField] float jumpSpeed = 5.0f;
     [SerializeField] float climbSpeed = 5.0f;
+    [SerializeField] Vector2 deathSeq = new Vector2(25f,25f);
+    [SerializeField] AudioClip jump;
+    AudioSource sfx;
 
+
+    bool Alive = true;
 
     Rigidbody2D playerCharacter;
     Animator playerAnimator;
-    CapsuleCollider2D playerBodyCollider;
-    CircleCollider2D playerFeetCollider;
+    BoxCollider2D playerBodyCollider;
+    CapsuleCollider2D playerFeetCollider;
 
     float gravityScaleAtStart;
 
@@ -20,18 +25,34 @@ public class Player : MonoBehaviour
     void Start(){
         playerCharacter = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        playerBodyCollider = GetComponent<CapsuleCollider2D>();
-        playerFeetCollider = GetComponent<CircleCollider2D>();
+        playerBodyCollider = GetComponent<BoxCollider2D>();
+        playerFeetCollider = GetComponent<CapsuleCollider2D>();
+        sfx = GetComponent<AudioSource>();
 
         gravityScaleAtStart = playerCharacter.gravityScale;
     }
 
     // Update is called once per frame
     void Update(){
+        
+        if (!Alive){
+            return;
+        }
+        
         Run();
         FlipSprite();
         Jump();
         Climb();
+        DogDied();
+    }
+
+    private void DogDied(){
+        if(playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy","Hazards","BadPickup"))){
+            Alive = false;
+            playerAnimator.SetTrigger("Die");
+            GetComponent<Rigidbody2D>().velocity = deathSeq;
+        }
+
     }
 
     private void Run(){
@@ -63,17 +84,20 @@ public class Player : MonoBehaviour
     }
 
     private void Jump(){
+
+        if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))){
+            return;
+        }
         
         if(Input.GetButtonDown("Jump")){
             //get new y velocity bsed on controllable variable
-            if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))){
-            return;
-        }
+            
             Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
             playerCharacter.velocity += jumpVelocity;
             //here
             bool vSpeed = Mathf.Abs(playerCharacter.velocity.y) > Mathf.Epsilon;
             playerAnimator.SetBool("Jump", vSpeed);
+            sfx.PlayOneShot(jump, 1.0f);
         }
 
         //yep
