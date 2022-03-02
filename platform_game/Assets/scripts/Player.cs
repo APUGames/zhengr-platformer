@@ -47,11 +47,24 @@ public class Player : MonoBehaviour
     }
 
     private void DogDied(){
-        if(playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy","Hazards","BadPickup"))){
+        /*bool die1 = false;
+        bool die2 = false;
+        bool die3 = false;*/
+        if(playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy","Hazards","BadPickup")))
+        {
+            /*if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy"))){
+            }
+            else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards"))){
+            }
+            else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("BadPickup"))){
+            }*/
             Alive = false;
             playerAnimator.SetTrigger("Die");
             GetComponent<Rigidbody2D>().velocity = deathSeq;
+            FindObjectOfType<gameSession>().processPlayerDeath();
         }
+
+
 
     }
 
