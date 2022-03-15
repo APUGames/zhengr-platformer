@@ -121,8 +121,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.23376195, y: -0.003832134}
-  m_Size: {x: 1.3868762, y: 0.7087755}
+  m_Offset: {x: -0.18365501, y: -0.14913999}
+  m_Size: {x: 0.895844, y: 0.41816774}
   m_Direction: 1
 --- !u!82 &1491369348
 AudioSource:
@@ -233,3 +233,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectSound: {fileID: 8300000, guid: e9a7a22a5f5dd904c94048a2b7a3d178, type: 3}
+  coinValue: 1

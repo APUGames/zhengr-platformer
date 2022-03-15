@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 4797423071327559161}
   - component: {fileID: 4797423071327559162}
   - component: {fileID: 4797423071327558662}
-  - component: {fileID: 4797423071327559160}
   - component: {fileID: 4797423071327558661}
   - component: {fileID: 1601266226}
   - component: {fileID: 1601266227}
   - component: {fileID: 3115545840759618658}
+  - component: {fileID: 708223670}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -111,23 +111,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4797423071327559160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4797423071327559163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f641bc902e478c4e9c62f16b799d38e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 8.5
-  jumpSpeed: 20
-  climbSpeed: 5
-  deathSeq: {x: 10, y: 10}
-  jump: {fileID: 8300000, guid: 08c4145a885f5ed46838d70cf5a0a748, type: 3}
 --- !u!95 &4797423071327558661
 Animator:
   serializedVersion: 4
@@ -286,3 +269,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &708223670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797423071327559163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f641bc902e478c4e9c62f16b799d38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 8
+  jumpSpeed: 20
+  climbSpeed: 5
+  deathSeq: {x: 25, y: 25}
+  jump: {fileID: 8300000, guid: 08c4145a885f5ed46838d70cf5a0a748, type: 3}
