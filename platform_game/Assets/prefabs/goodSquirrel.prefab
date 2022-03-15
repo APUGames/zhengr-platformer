@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 2922654427775159568}
   - component: {fileID: 2922654427775159571}
   - component: {fileID: 2922654427775159569}
-  - component: {fileID: 1422150490}
+  - component: {fileID: 6858799578956721209}
+  - component: {fileID: 665133320}
   m_Layer: 14
   m_Name: goodSquirrel
   m_TagString: Untagged
@@ -162,7 +163,7 @@ Animator:
   m_GameObject: {fileID: 2922654427775159564}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f83bc7dae1ac9f145be43cd01f27ecd8, type: 2}
+  m_Controller: {fileID: 9100000, guid: f0284a4a9dc9ab34695d58087079b2dd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -172,7 +173,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1422150490
+--- !u!114 &6858799578956721209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,7 +182,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2922654427775159564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a72824c67332e9b449050f3aef55ac55, type: 3}
+  m_Script: {fileID: 11500000, guid: 9777cbbe906ca444aa462b5d841b1eec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 6.5
+--- !u!114 &665133320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2922654427775159564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66773d61d9818b5428e95b45d28f729d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 2
+  sloMoFactor: 0.2
+  winCon: 0

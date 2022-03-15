@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class gameSession : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] int playerLives = 3;
+    //[SerializeField] int playerLives = 3;
     [SerializeField] int playerScore = 0;
     [SerializeField] float delayTime = 2.5f;
-    [SerializeField] Text lives;
+    //[SerializeField] Text lives;
     [SerializeField] Text score;
 
     private void Awake(){
@@ -30,7 +30,27 @@ public class gameSession : MonoBehaviour
         score.text = playerScore.ToString();
     }
 
+    //new changes here down
+
     public void processPlayerDeath(){
+            StartCoroutine(ResetGameSession());
+    }
+
+    IEnumerator ResetGameSession(){
+
+        yield return new WaitForSecondsRealtime(delayTime);
+
+        yield return new WaitForSecondsRealtime(delayTime);
+
+        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+        Destroy(gameObject);
+
+    }
+
+    //changes end
+
+    /*public void processPlayerDeath(){
         if (playerLives > 1) {
              StartCoroutine(SubtractLife());
         }
@@ -55,11 +75,11 @@ public class gameSession : MonoBehaviour
 
         SceneManager.LoadScene(0);
         Destroy(gameObject);
-    }
+    }*/
 
     void Start()
     {
-        lives.text = playerLives.ToString();
+        //lives.text = playerLives.ToString();
         score.text = playerScore.ToString();
         
     }

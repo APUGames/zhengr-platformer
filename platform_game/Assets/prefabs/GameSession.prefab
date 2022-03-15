@@ -199,7 +199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1161877611
 RectTransform:
   m_ObjectHideFlags: 0
@@ -307,8 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc2009ce9fba81744902b10194e079b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLives: 3
   playerScore: 0
-  delayTime: 1
-  lives: {fileID: 1161877612}
+  delayTime: 0.5
   score: {fileID: 785218370}
