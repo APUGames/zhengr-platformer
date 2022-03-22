@@ -8333,11 +8333,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3597965770427192, guid: b4ee0992cbfb6f944abc3cf8a5ae15f8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3597965770427192, guid: b4ee0992cbfb6f944abc3cf8a5ae15f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.505878
+      value: 17.21
       objectReference: {fileID: 0}
     - target: {fileID: 3597965770427192, guid: b4ee0992cbfb6f944abc3cf8a5ae15f8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -73861,8 +73861,65 @@ Transform:
   - {fileID: 940802708}
   - {fileID: 890807215}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1737757947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2922654427775159564, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_Name
+      value: goodSquirrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 102.103806
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.586886
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922654427775159567, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97745a853f5a9214599cf4d76d28da40, type: 3}
 --- !u!1 &1990118440
 GameObject:
   m_ObjectHideFlags: 0
@@ -75155,15 +75212,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8024099368253387128, guid: 7f1b6df726978384085a7e7771bbd973, type: 3}
       propertyPath: orthographic size
-      value: 5.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8024099368253387143, guid: 7f1b6df726978384085a7e7771bbd973, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.434841
+      value: 5.11
       objectReference: {fileID: 0}
     - target: {fileID: 8024099368253387143, guid: 7f1b6df726978384085a7e7771bbd973, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.94919
+      value: -11.95
       objectReference: {fileID: 0}
     - target: {fileID: 8024099368253387143, guid: 7f1b6df726978384085a7e7771bbd973, type: 3}
       propertyPath: m_LocalPosition.z
