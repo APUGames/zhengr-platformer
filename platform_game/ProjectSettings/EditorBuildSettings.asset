@@ -14,4 +14,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/lv2.unity
     guid: b55ee57779a3d2d409df9b1690f6b48e
+  - enabled: 1
+    path: Assets/Levels/lv2a.unity
+    guid: ce1b3ed0745f2a647a18e82679814b01
+  - enabled: 1
+    path: Assets/Levels/lv3.unity
+    guid: 65d1c8aff07814449b723e52f76f3a0a
+  - enabled: 1
+    path: Assets/Levels/lv3a.unity
+    guid: d84a4275909a0fc4eafd77253b3f8857
+  - enabled: 1
+    path: Assets/Levels/lv4.unity
+    guid: bd0b40aa50185c940a261cff167ff8f6
+  - enabled: 1
+    path: Assets/Levels/lv4a.unity
+    guid: c3417d45034421142afae5c6518a3e09
+  - enabled: 1
+    path: Assets/Levels/lv5.unity
+    guid: 367cebf753490c946b1e557eac9a4fdf
+  - enabled: 1
+    path: Assets/Levels/lv5a.unity
+    guid: 5d093f70ba5da7640924b14b426b959f
+  - enabled: 1
+    path: Assets/Levels/lv6.unity
+    guid: 53cf27ca777ea7e469de79f5c2510da4
+  - enabled: 1
+    path: Assets/Levels/lv6a.unity
+    guid: cab9118a9f9298b43bc702e513b1fba5
+  - enabled: 1
+    path: Assets/Levels/lv7.unity
+    guid: c972aae52fb2cc94f9d81f8dd4a2e2a4
+  - enabled: 1
+    path: Assets/Levels/lv7a.unity
+    guid: 1fd21ed3bea41064b9046d97c68b351a
+  - enabled: 1
+    path: Assets/Levels/lv8.unity
+    guid: ff2ed820040c4fd41a9fef26e21e5ea7
+  - enabled: 1
+    path: Assets/Levels/lv8a.unity
+    guid: 93649bc0c4e7de247924b2f30f1542b9
+  - enabled: 1
+    path: Assets/Levels/lv9.unity
+    guid: 4883715c997a747499ee3fd2d56d4a71
+  - enabled: 1
+    path: Assets/Levels/lv9a.unity
+    guid: 751685d409de12d4db1b4ca5c2adc3b3
+  - enabled: 1
+    path: Assets/Levels/lv10.unity
+    guid: 189086e135baa9f4692066e5d8c51890
+  - enabled: 1
+    path: Assets/Levels/lv10a.unity
+    guid: 1ed4389883ae44b48af69d56ba52f20e
   m_configObjects: {}
