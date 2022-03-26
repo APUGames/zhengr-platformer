@@ -17,6 +17,7 @@ public class betweenSession : MonoBehaviour
 
     IEnumerator LoadNextLevel(){
 
+        yield return new WaitForSecondsRealtime(delayTime);
 
         yield return new WaitForSecondsRealtime(delayTime);
 

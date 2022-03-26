@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2922654427775159571}
   - component: {fileID: 2922654427775159569}
   - component: {fileID: 2922654427775159570}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,4 +184,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a72824c67332e9b449050f3aef55ac55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5.5
+  moveSpeed: 7.5

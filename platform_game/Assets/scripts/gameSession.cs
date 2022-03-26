@@ -13,6 +13,10 @@ public class gameSession : MonoBehaviour
     //[SerializeField] Text lives;
     [SerializeField] Text score;
 
+
+    BoxCollider2D playerBodyCollider;
+
+
     private void Awake(){
         int numGameSessions = FindObjectsOfType<gameSession>().Length;
 
@@ -36,7 +40,7 @@ public class gameSession : MonoBehaviour
             StartCoroutine(ResetGameSession());
     }
 
-    IEnumerator ResetGameSession(){
+   /* IEnumerator ResetGameSession(){
 
         yield return new WaitForSecondsRealtime(delayTime);
 
@@ -46,36 +50,21 @@ public class gameSession : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
         Destroy(gameObject);
 
-    }
-
-    //changes end
-
-    /*public void processPlayerDeath(){
-        if (playerLives > 1) {
-             StartCoroutine(SubtractLife());
-        }
-        else {
-            StartCoroutine(ResetGameSession());
-        }
-    }
-
-    IEnumerator SubtractLife(){
-        playerLives--;
-
-        yield return new WaitForSecondsRealtime(delayTime);
-
-        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
-        lives.text = playerLives.ToString();
-    }
-
-    IEnumerator ResetGameSession(){
-
-        yield return new WaitForSecondsRealtime(delayTime);
-
-        SceneManager.LoadScene(0);
-        Destroy(gameObject);
     }*/
+
+    IEnumerator ResetGameSession(){
+
+        yield return new WaitForSecondsRealtime(delayTime);
+
+        yield return new WaitForSecondsRealtime(delayTime);
+
+        string sceneName = PlayerPrefs.GetString("lastLoadedScene");
+        SceneManager.LoadScene(sceneName);
+
+        Destroy(gameObject);
+
+    }
+
 
     void Start()
     {

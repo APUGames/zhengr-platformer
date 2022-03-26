@@ -185,7 +185,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.534
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -286,3 +286,4 @@ MonoBehaviour:
   climbSpeed: 5
   deathSeq: {x: 25, y: 25}
   jump: {fileID: 8300000, guid: 08c4145a885f5ed46838d70cf5a0a748, type: 3}
+  die: {fileID: 8300000, guid: a416c462d256f304e8e382bf3b6deade, type: 3}

@@ -901,7 +901,7 @@ TextureImporter:
       physicsShape:
       - - {x: -32, y: 12}
         - {x: -32, y: -32}
-        - {x: 20, y: -32}
+        - {x: -4, y: -32}
         - {x: -5, y: 11}
       tessellationDetail: 0
       bones: []
