@@ -11,6 +11,7 @@ public class playerScript : MonoBehaviour
     [SerializeField] Vector2 deathSeq = new Vector2(25f,25f);
     [SerializeField] AudioClip jump;
     [SerializeField] AudioClip die;
+    [SerializeField] float delayTime = 3.5f;
     AudioSource sfx;
 
 
@@ -52,6 +53,7 @@ public class playerScript : MonoBehaviour
     /*private void DogDied(){
         if(playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy","Hazards","BadPickup","PTSD")))
         {
+            sfx.PlayOneShot(die, 0.8f);
             Alive = false;
             playerAnimator.SetTrigger("Die");
             GetComponent<Rigidbody2D>().velocity = deathSeq;
@@ -67,27 +69,31 @@ public class playerScript : MonoBehaviour
             playerAnimator.SetTrigger("Die");
             GetComponent<Rigidbody2D>().velocity = deathSeq;
             var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            StartCoroutine(DeathScene());
+        }
+    }
+
+    IEnumerator DeathScene(){
 
         if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy"))) {
+            yield return new WaitForSecondsRealtime(delayTime);
             SceneManager.LoadScene(22);
-        Destroy(gameObject);
-
+            Destroy(gameObject);
         }
-        else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("BadPickup"))) {
+            else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("BadPickup"))) {
+            yield return new WaitForSecondsRealtime(delayTime);
             SceneManager.LoadScene(23);
-        Destroy(gameObject);
-
+            Destroy(gameObject);
         }
-        else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("PTSD"))) {
+            else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("PTSD"))) {
+            yield return new WaitForSecondsRealtime(delayTime);
             SceneManager.LoadScene(24);
-        Destroy(gameObject);
-
+            Destroy(gameObject);
         }
         else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards"))) {
+            yield return new WaitForSecondsRealtime(delayTime);
             SceneManager.LoadScene(25);
-        Destroy(gameObject);
-
-        }
+            Destroy(gameObject);
         }
     }
 
@@ -150,7 +156,7 @@ public class playerScript : MonoBehaviour
         Vector2 climbVelocity = new Vector2(playerCharacter.velocity.x, vMovement * climbSpeed);
         playerCharacter.velocity = climbVelocity;
 
-        //playerCharacter.gravityScale = 0.0f;
+        playerCharacter.gravityScale = 0.0f;
 
         bool vSpeed = Mathf.Abs(playerCharacter.velocity.y) > Mathf.Epsilon;
         playerAnimator.SetBool("Climb", vSpeed);

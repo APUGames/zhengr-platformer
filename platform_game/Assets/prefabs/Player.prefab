@@ -281,9 +281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f641bc902e478c4e9c62f16b799d38e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 8
+  runSpeed: 9
   jumpSpeed: 20
   climbSpeed: 5
   deathSeq: {x: 25, y: 25}
   jump: {fileID: 8300000, guid: 08c4145a885f5ed46838d70cf5a0a748, type: 3}
-  die: {fileID: 8300000, guid: a416c462d256f304e8e382bf3b6deade, type: 3}
+  die: {fileID: 8300000, guid: 3322e422efcd61541b36eec807a19330, type: 3}
+  delayTime: 0.5

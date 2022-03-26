@@ -142,7 +142,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -232,5 +232,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51d01eec23e5b847888562a3875d2de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 8300000, guid: e9a7a22a5f5dd904c94048a2b7a3d178, type: 3}
+  collectSound: {fileID: 8300000, guid: dbeba60f5ea1d5f47ab1164a1ef1b4f2, type: 3}
   coinValue: 1

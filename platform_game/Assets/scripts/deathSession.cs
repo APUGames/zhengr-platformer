@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class deathSession : MonoBehaviour
 {
-    [SerializeField] float delayTime = 2.0f;
+    [SerializeField] float delayTime = 1.5f;
     public bool winCon = false;
 
     private void Awake(){
@@ -19,9 +19,6 @@ public class deathSession : MonoBehaviour
         yield return new WaitForSecondsRealtime(delayTime);
 
         FindObjectOfType<gameSession>().processPlayerDeath();
-
-        //var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        //SceneManager.LoadScene(currentSceneIndex+1);
     }
 
     void Update()

@@ -9,7 +9,7 @@ public class gameSession : MonoBehaviour
     // Start is called before the first frame update
     //[SerializeField] int playerLives = 3;
     [SerializeField] int playerScore = 0;
-    [SerializeField] float delayTime = 2.5f;
+    [SerializeField] float delayTime = 0.0f;
     //[SerializeField] Text lives;
     [SerializeField] Text score;
 
@@ -56,14 +56,35 @@ public class gameSession : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(delayTime);
 
-        yield return new WaitForSecondsRealtime(delayTime);
-
         string sceneName = PlayerPrefs.GetString("lastLoadedScene");
         SceneManager.LoadScene(sceneName);
 
         Destroy(gameObject);
 
     }
+
+    /*IEnumerator ResetGameSession(){
+        
+        if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy"))) {
+            SceneManager.LoadScene(22);
+        Destroy(gameObject);
+        }
+        else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("BadPickup"))) {
+            SceneManager.LoadScene(23);
+        Destroy(gameObject);
+        }
+        else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("PTSD"))) {
+            SceneManager.LoadScene(24);
+        Destroy(gameObject);
+        }
+        else if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards"))) {
+            SceneManager.LoadScene(25);
+        Destroy(gameObject);
+        }
+
+        yield return new WaitForSecondsRealtime(delayTime);
+
+    }*/
 
 
     void Start()
