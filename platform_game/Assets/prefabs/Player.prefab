@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 9
-  jumpSpeed: 20
+  jumpSpeed: 22
   climbSpeed: 5
   deathSeq: {x: 25, y: 25}
   jump: {fileID: 8300000, guid: 08c4145a885f5ed46838d70cf5a0a748, type: 3}

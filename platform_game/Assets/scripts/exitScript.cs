@@ -8,6 +8,11 @@ public class exitScript : MonoBehaviour
     [SerializeField] float delayTime = 2.0f;
     [SerializeField] float sloMoFactor = 0.2f;
     public bool winCon = false;
+    
+    void Start()
+    {
+        winCon = false;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision) {
             if(winCon){

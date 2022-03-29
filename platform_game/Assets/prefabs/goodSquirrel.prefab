@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2922654427775159571}
   - component: {fileID: 2922654427775159569}
   - component: {fileID: 6858799578956721209}
-  - component: {fileID: 665133320}
+  - component: {fileID: 1203150333560619316}
   m_Layer: 14
   m_Name: goodSquirrel
   m_TagString: Untagged
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6.5
---- !u!114 &665133320
+--- !u!114 &1203150333560619316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2922654427775159564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66773d61d9818b5428e95b45d28f729d, type: 3}
+  m_Script: {fileID: 11500000, guid: dae8c2c750497d8409ee6cd14d6d9991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2

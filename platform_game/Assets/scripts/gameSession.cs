@@ -12,6 +12,7 @@ public class gameSession : MonoBehaviour
     [SerializeField] float delayTime = 0.0f;
     //[SerializeField] Text lives;
     [SerializeField] Text score;
+    [SerializeField] float sloMoFactor = 1.0f;
 
 
     BoxCollider2D playerBodyCollider;
@@ -19,9 +20,9 @@ public class gameSession : MonoBehaviour
 
     private void Awake(){
         int numGameSessions = FindObjectsOfType<gameSession>().Length;
-
         if(numGameSessions > 1){
             Destroy(gameObject);
+            Time.timeScale = 1.0f;
         }
         else{
             DontDestroyOnLoad(gameObject);

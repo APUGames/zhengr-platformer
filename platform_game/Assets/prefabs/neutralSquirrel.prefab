@@ -198,6 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66773d61d9818b5428e95b45d28f729d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 2
+  delayTime: 0.1
   sloMoFactor: 0.2
-  winCon: 0
+  winCon: 1
